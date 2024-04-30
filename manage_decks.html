@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Manage decks</title>
 </head>
 <body>
-    <a href="/index.html">Back to menu</a>
-    <button id="add-new-deck-button">Add deck</button>
-    <div id="available-decks-container"></div>
+    <main>
+        <a href="/index.html">Back to menu</a>
+        <button id="add-new-deck-button">Add deck</button>
+        <div class="available-decks-container" id="available-decks-container"></div>
+    </main>
+
+    <div id="add-deck-subwindow">
+        <input type="text" id="input-field" placeholder="Enter text here ...">
+        <button id="create-new-deck-button">Create deck</button>
+        <button id="leave-add-deck-subwindow">X</button>
+    </div>
 </body>
+
 <script src="/manage_decks.js" type="module"></script>
 </html>
